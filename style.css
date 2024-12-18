@@ -1,0 +1,120 @@
+/* Genel stil ayarları */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    background-image: url('bilgisayar-muhendisligi-nedir-1024x320.webp'); /* Sayfa genel arka plan resmi */
+    background-size: cover; /* Arka planın tüm sayfayı kaplamasını sağlar */
+    background-position: center; /* Arka planın ortalanmasını sağlar */
+    background-attachment: fixed; /* Arka plan sabit kalır */
+    min-height: 100vh; /* Sayfanın en az ekran yüksekliği kadar olmasını sağlar */
+}
+
+/* Navbar */
+nav {
+    background-color: rgba(0, 0, 0, 0.7); /* Saydam bir navbar arka planı */
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Bölüm Başlıkları */
+section h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #fff; /* Başlıklar beyaz renk olmalı, çünkü arka plan koyu olacak */
+}
+
+/* Hakkında, Projelerim ve İletişim Bölümleri */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* Arka plan biraz saydam olacak */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    position: relative;
+    text-align: center; /* Yazıları ortalamak için */
+}
+
+/* Her bölümün arkasına arka plan resmi eklenmesi */
+#anasayfa {
+    background-image: url('images.jpeg'); /* Ana Sayfa için özel arka plan */
+    background-size: cover;
+    background-position: center;
+}
+
+#hakkinda {
+    background-image: url('images.jpeg'); /* Hakkında için özel arka plan */
+    background-size: cover;
+    background-position: center;
+}
+
+#projelerim {
+    background-image: url('images.jpeg'); /* Projelerim için özel arka plan */
+    background-size: cover;
+    background-position: center;
+}
+
+#iletisim {
+    background-image: url('images.jpeg'); /* İletişim için özel arka plan */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Liste ve resim stil ayarları */
+#projelerim ul {
+    list-style-type: none;
+}
+
+#projelerim ul li {
+    background-color: #f1f1f1;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Resim Stil Ayarları */
+section img {
+    width: 100%; /* Resimlerin genişliği %100 olacak */
+    height: 800px; /* Yükseklik şimdi 800px olacak (500px artırıldı) */
+    object-fit: cover; /* Resimlerin oranlarını bozmadan kesilmesini sağlar */
+    display: block;
+    margin: 20px auto; /* Resimleri ortalar */
+}
+
+/* Yazılar ve metinler için stil */
+section p {
+    font-size: 16px;
+    color: #fff; /* Yazı rengini beyaz yaptım */
+    margin-top: 20px;
+}
